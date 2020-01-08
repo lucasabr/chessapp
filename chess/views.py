@@ -15,8 +15,11 @@ messages = [
         'timestamp' : 'Jan 8th, 2019'
     }
 ]
-def home(request):
+def chat(request):
     context = {
         'messages' : messages
     }
     return render(request, 'chess/home.html', context)
+
+def home(request):
+    return HttpResponse('<h1>Welcome to Chess<h1>')
