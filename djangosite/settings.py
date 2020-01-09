@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'login.apps.LoginConfig',
     'ttt.apps.TttConfig',
     'chess.apps.ChessConfig',
     'django.contrib.admin',
