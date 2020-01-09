@@ -30,3 +30,7 @@ ul {
     color:green;
 
   }
+  .isActive {
+    font-weight:bold;
+    font-style: italic;
+  }

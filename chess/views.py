@@ -19,7 +19,7 @@ def chat(request):
     context = {
         'messages' : messages
     }
-    return render(request, 'chess/home.html', context)
+    return render(request, 'chess/chat.html', context)
 
 def home(request):
-    return HttpResponse('<h1>Welcome to Chess<h1>')
+    return render(request, 'chess/home.html', {'current':'chess'})

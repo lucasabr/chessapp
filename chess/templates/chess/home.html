@@ -1,15 +1,6 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Chess Home</title>
-    </head>
-    <body>
-        {% for message in messages %}
-            <h1>To {{ message.recipient }},</h1>
-            <h1>From {{ message.author }},</h1>
-            <h1>At {{ message.timestamp }}:</h1>
-            <h1>{{ message.message }}</h1>
-            <hr>
-        {% endfor %}
-    </body>
-</html>
+{% extends "main/base.html" %}  
+{% block content %}
+
+    <h1>Welcome to chess!</h1>
+    <p>Chess is a fun game</p>
+{% endblock content %}

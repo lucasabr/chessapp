@@ -1,0 +1,10 @@
+{% extends "main/base.html" %}  
+{% block content %}
+    {% for message in messages %}
+        <h1>To {{ message.recipient }},</h1>
+        <h1>From {{ message.author }},</h1>
+        <h1>At {{ message.timestamp }}:</h1>
+        <h1>{{ message.message }}</h1>
+        <hr>
+    {% endfor %}
+{% endblock content %}

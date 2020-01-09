@@ -1,20 +1,5 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="En">
-
-<head>
-	<meta charset="UTF-8">
-	<title> Login </title>
-	<link rel="stylesheet" type="text/css" href="{% static 'login/login.css'%}" title="style" />
-
-</head>
-
-<body>
-	<header>
-		<h1>Login</h1>
-		<hr>
-	</header>
-
+{% extends "main/base.html" %}  
+{% block content %}
 	<div class="column1">
 
 		<div class="inputs">
@@ -31,6 +16,4 @@
 		<hr>
 	</div>
 	<footer>(c)  <span> chessApp </span> </footer>
-</body>
-
-</html>
+{% endblock content %}
