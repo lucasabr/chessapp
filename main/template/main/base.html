@@ -1,0 +1,27 @@
+<!--  {% load static %} -->
+<!DOCTYPE html>
+<html lang="En">
+
+<head>
+    <meta charset="UTF-8">
+    
+    {% if  title %}
+        <title>Games Site - {{ title }}</title>
+    {% else %}
+        <title>Games Site</title>
+    {% endif %}
+
+	<link rel="stylesheet" type="text/css" href="{% static 'main/nav.css'%}" title="style" />
+</head>
+
+<body>
+	<ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="login/">Login</a></li>
+        <li><a href="chess/">Chess</a></li>
+        <li><a href="ttt/">TicTacToe</a></li>
+        <li><a href="about/">About</a></li>
+    </ul>
+</body>
+
+</html>
