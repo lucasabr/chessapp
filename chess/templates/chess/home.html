@@ -1,6 +1,11 @@
 {% extends "main/base.html" %}  
 {% block content %}
+{% load static %}
 
     <h1>Welcome to chess!</h1>
     <p>Chess is a fun game</p>
+
+
+    <img src="{% static 'chessboard.png' %}" alt="chess board placeholder" height="791" width="800">
+
 {% endblock content %}
