@@ -1,0 +1,14 @@
+#chatwindow{
+
+float: left;
+
+}
+
+#messagebox{
+float:left;
+color:black;
+background-color: white;
+margin-top: .5vw;
+display: block;
+border: 0;
+}

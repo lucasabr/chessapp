@@ -2,10 +2,33 @@
 {% block content %}
 {% load static %}
 
-    <h1>Welcome to chess!</h1>
-    <p>Chess is a fun game</p>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'chess2.css'%}" title="style" />
+</head>
 
+    <div id="main">
+    <h1>Welcome to chess!</h1>
 
     <img src="{% static 'chessboard.png' %}" alt="chess board placeholder" height="791" width="800">
+
+ 
+    </div>
+
+    <div id="comms">
+
+            <div id="chatwindow">
+                <h1>Message</h1>
+                <textarea placeholder="Type message.." name="msg" required></textarea>
+                <br>
+                <button type="submit" class="btn">Send</button>
+            </div>
+
+        <div id="messagebox">
+            <p>Chat log is empty...</p>
+        </div>  
+
+    </div>
+
+    
 
 {% endblock content %}

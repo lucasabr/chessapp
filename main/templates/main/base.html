@@ -32,7 +32,7 @@
             <!-- Navbar Right Side -->
             <div class="navbar-nav">
               {% if user.is_authenticated %}
-              <a class="nav-item nav-link {% if current == 'login' %} isActive {% endif %}" href="/logout">Logout</a>
+              <a class="nav-item nav-link {% if current == 'login' %} isActive {% endif %}" href="/logout">Logout </a>
               {% else %}
                 <a class="nav-item nav-link {% if current == 'login' %} isActive {% endif %}" href="/login">Login</a>
                 <a class="nav-item nav-link {% if current == 'register' %} isActive {% endif %}" href="/register">Register</a>
@@ -42,13 +42,6 @@
         </div>
       </nav>
     <br><br><br>
-	<!--<ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="login/">Login</a></li>
-        <li><a href="chess/">Chess</a></li>
-        <li><a href="ttt/">TicTacToe</a></li>
-        <li><a href="about/">About</a></li>
-    </ul>-->
     
       {% if messages %}
         {% for message in messages %}
