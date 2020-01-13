@@ -14,3 +14,6 @@ def home(request):
     else:
         form = UserRegisterForm()
     return render(request, 'register/register.html', {'form' : form})
+
+def profile(request):
+    return render(request, 'register/profile.html')

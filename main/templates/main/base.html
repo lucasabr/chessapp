@@ -32,7 +32,12 @@
             <!-- Navbar Right Side -->
             <div class="navbar-nav">
               {% if user.is_authenticated %}
+<<<<<<< HEAD
+              <a class="nav-item nav-link {% if current == 'profile' %} isActive {% endif %}" href="/profile">Profile</a>
+              <a class="nav-item nav-link {% if current == 'logout' %} isActive {% endif %}" href="/logout">Logout</a>
+=======
               <a class="nav-item nav-link {% if current == 'login' %} isActive {% endif %}" href="/logout">Logout </a>
+>>>>>>> 43dd02c5eb62c058c23221cba242135a4fa4bb70
               {% else %}
                 <a class="nav-item nav-link {% if current == 'login' %} isActive {% endif %}" href="/login">Login</a>
                 <a class="nav-item nav-link {% if current == 'register' %} isActive {% endif %}" href="/register">Register</a>
