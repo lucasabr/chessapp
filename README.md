@@ -6,3 +6,5 @@ django (env)
 - website framework
 django-crispy-forms
 - django plugin for login forms
+pillow
+- profile pictures/management
